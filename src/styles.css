@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background: #dddeee !important;
+}
+.nav-bar{
+    padding: 10px 5px;
+    background: #ddeeed;
+    margin-top: -16px;
+    color:#648fd8;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #9b1212;
+}
+
+.container.router-container {
+    min-height: calc(100vh - 127px);
+    background: #fff;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.login-form{
+    text-align:left;
+    background-color: #dddeee;
+    padding: 20px;
+    border-radius: 4px 8px;
+    width: 350px;   
+    margin-top: 17%;
+}
+.login-form .form-control{
+    margin-bottom: 10px;
+}
+.login-form .btn{
+    margin: auto 10px;
+    width: 130px;
+}
+div.error-msg {
+    color: red;
+    margin-top: -13px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    padding: 2px;
+}
+input.form-control.ng-touched.ng-pristine.ng-invalid, input.form-control.ng-invalid.ng-touched.ng-dirty {
+    border: 1px solid red;
+}
+.signup-link {
+    padding: 10px 5px;
+    font-size: 12px;
+    color: #9d244a;
+    font-weight: 600;
+}
+
+.forgot-link{
+    float: right;
+}
+
+.login-buttons{
+    text-align: center;
+}
+.p-treeselect {
+    width: 100%;
+}
+
+span.p-treeselect-token-label::after {
+    content: 'X';
+    padding: 2px 4px;
+    color: #a92e2e;
+    border: 1px solid #c33838;
+    border-radius: 55%;
+    font-size: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}

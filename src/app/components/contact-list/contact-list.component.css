@@ -1,0 +1,46 @@
+
+.p-button {
+    color: #1b1515;
+    background: #c9dae9;
+    border: 1px solid #c1cfda;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 3px;
+}
+
+.p-button:enabled:hover {
+    color: #1b1515;
+    background: #a9bdcf;
+    border: 1px solid #c1cfda;
+}
+.p-button .fa-remove{
+    position: absolute;
+    right: 0;
+    color: red;
+    padding: 1px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.p-button-rounded{
+    cursor: defautl;
+}
+.p-button.p-button-rounded {
+    border-radius: 2rem;
+    margin:2px;
+}
+
+::ng-deep .p-overlaypanel:after, ::ng-deep .p-overlaypanel:before {
+
+    content: none !important;
+    height: 0;
+
+}
+
+.more-records{
+    font-weight: 600;
+    margin-top: 11px;
+    position: absolute;
+    font-size: 1.1rem;
+}

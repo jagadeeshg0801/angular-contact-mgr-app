@@ -1,0 +1,28 @@
+<p>contact-list works!</p>
+
+
+<div class="row">
+    <div class="col-12 form-group">
+        <label>Select Document</label>
+
+        <div  icon="pi pi-search" #searchDiv style="width: 100%;border:2px solid blue;padding:15px 10px;"
+            (click)="op.toggle($event)"><i class="fa fa-caret-down" style="float: right;"></i>
+            <!-- <button pButton type="button" label="Click" ></button> -->
+
+            <span *ngFor="let chip of selectedNode; let i = index" class="chip-cls">
+                <button pButton pRipple *ngIf="i<5"  [label]="chip.label" class="p-button-rounded"><i class="fa fa-remove"
+                        (click)="removeNode(chip, i)"></i></button>
+            </span>
+            <span class="more-records" *ngIf="selectedNode?.length>5"> + {{selectedNode?.length-5}} More</span>
+        </div>
+    </div>
+</div>
+<p-overlayPanel #op appendTo="body" [showCloseIcon]="true" [style]="{width: '450px'}" appendTo="body"
+    [dismissable]="true" [showCloseIcon]="false">
+    <ng-template pTemplate>
+        <p-tree [(selection)]="selectedNode" (onNodeSelect)="nodeSelect($event)" (onNodeUnselect)="nodeUnselect($event)"
+            selectionMode="checkbox" display="chip" [value]="nodes">
+            <!-- <ng-template pTemplate="default" let-node>{{node |json}}</ng-template> -->
+        </p-tree>
+    </ng-template>
+</p-overlayPanel>
