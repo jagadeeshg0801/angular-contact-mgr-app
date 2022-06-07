@@ -10,6 +10,7 @@ export class ContactListComponent implements OnInit {
   nodes:any;
   selectedNode:any;
   selectedString: string;
+  displayNodeSize: number = 3;
   constructor(private mockService: MockService) { }
 
   ngOnInit(): void {
@@ -35,7 +36,7 @@ export class ContactListComponent implements OnInit {
     console.log('this.selectedNode',this.selectedNode);
     
     console.log('Object.keys(this.selectedNode)', Object.keys(this.selectedNode))
-    
+
     this.selectedString = Object.keys(this.selectedNode)
       .map((key) => this.selectedNode[key].label)
       .join(',');

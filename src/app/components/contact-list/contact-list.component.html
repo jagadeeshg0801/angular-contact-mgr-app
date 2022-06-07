@@ -10,10 +10,10 @@
             <!-- <button pButton type="button" label="Click" ></button> -->
 
             <span *ngFor="let chip of selectedNode; let i = index" class="chip-cls">
-                <button pButton pRipple *ngIf="i<5"  [label]="chip.label" class="p-button-rounded"><i class="fa fa-remove"
+                <button pButton pRipple *ngIf="i<displayNodeSize"  [label]="chip.label" class="p-button-rounded"><i class="fa fa-remove"
                         (click)="removeNode(chip, i)"></i></button>
             </span>
-            <span class="more-records" *ngIf="selectedNode?.length>5"> + {{selectedNode?.length-5}} More</span>
+            <span class="more-records" *ngIf="selectedNode?.length>displayNodeSize"> + {{selectedNode?.length-displayNodeSize}} More</span>
             <span *ngIf="!selectedNode || selectedNode?.length==0">Choose  Documents</span>
         </div>
     </div>
