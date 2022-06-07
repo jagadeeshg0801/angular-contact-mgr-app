@@ -44,3 +44,11 @@
     position: absolute;
     font-size: 1.1rem;
 }
+
+
+.dropdown-box{
+    width: 100%;
+    border: 1px solid #cecedb;
+    padding: 8px;
+    border-radius: 4px;
+}

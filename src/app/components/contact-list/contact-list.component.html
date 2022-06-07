@@ -5,7 +5,7 @@
     <div class="col-12 form-group">
         <label>Select Document</label>
 
-        <div  icon="pi pi-search" #searchDiv style="width: 100%;border:2px solid blue;padding:15px 10px;"
+        <div  icon="pi pi-search" #searchDiv class="dropdown-box"
             (click)="op.toggle($event)"><i class="fa fa-caret-down" style="float: right;"></i>
             <!-- <button pButton type="button" label="Click" ></button> -->
 
@@ -14,6 +14,7 @@
                         (click)="removeNode(chip, i)"></i></button>
             </span>
             <span class="more-records" *ngIf="selectedNode?.length>5"> + {{selectedNode?.length-5}} More</span>
+            <span *ngIf="!selectedNode || selectedNode?.length==0">Choose  Documents</span>
         </div>
     </div>
 </div>
