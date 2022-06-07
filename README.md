@@ -9,6 +9,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## TO View the APplication 
 https://jagadeeshg0801.github.io/angular-contact-mgr-app/
 
+
+##Features
+1. P-tree, p-overlayPanel template implementation added
+2. Reactive Form Validation implemented in login page
+3. Router Navigation & Configuration done
+4. Service Injection (Dependency Injection) added for Login i.e., auth-service
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
