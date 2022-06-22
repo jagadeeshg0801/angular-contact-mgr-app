@@ -17,7 +17,7 @@ import {TreeSelectModule} from 'primeng/treeselect';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OverlayPanelModule } from 'primeng/overlaypanel';
-
+import {DialogModule} from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
@@ -42,7 +42,8 @@ import { ButtonModule } from 'primeng/button';
     
     ButtonModule,
     
-    OverlayPanelModule
+    OverlayPanelModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
